@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+:root{
+    --mainColor : hsl(240 4.9% 83.9%);;
+    --hoverColor:hsl(0, 42%, 60%); ;
+    --backgroundColor : #f1f8fc;
+    --darkOne : hsl(0 60% 19.6%);
+    --darkTwo : #45424b;
+    --lightOne : #919191;
+    --lightTwo : #aaa;
+}
+
+
+*,
+*::before, 
+*::after{
+ padding:0px;
+ margin:0px;
+ box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow :hidden;
+    background-color: #fff;
+    display : flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+
+.container{
+    position :relative;
+    max-width : 81rem;
+    width:  100%;
+    margin: 0 auto;
+    padding: 0 3rem; 
+    z-index: 10;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+    
+}
+
+.logo{
+    display: flex;
+    align-items:center ;
+    cursor: pointer;
+}
+
+.logo img{
+    width :40px;
+    margin-right:.6rem;
+    margin-top: -0.6rem;
+
+}
+
+.logo h3{
+    color : var(--darkOne);
+    font-size : 1.55rem;
+    line-height : 1.2;
+    font-weight : 700;
+}
+
+.links ul{
+    display : flex;
+    list-style: none;
+    align-items : center;
+}
+
+.links a{
+    color : var(--lightTwo);
+    margin-left: 4.5rem;
+    display : inline-block;
+    transition:0.3s;
+}
+
+.links a:hover{
+    color:var(--hoverColor);
+    transform : scale(1.05)
+}
+ 
+.btn{
+    display: inline-block;
+    padding: .9rem 1.9rem;
+    color:#f1f8fc !important;
+    background-color: var(--darkOne);
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+    
+}
+
+.showcase-area .container{
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns :repeat(2, 1fr);
+    align-items: center;
+    justify-content:center;
+}
+
+.big-title{
+    font-size:1.4rem;
+    color: var(--darkOne);
+    text-transform : capitalize;
+    line-height: 1.4;
+}
+
+.text{
+    color: var(--lightone);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width:600px;
+    line-height:2.3;
+}
+
+.showcase-area .btn{
+    box-shadow: 0 0 40px 2px rgba(0 0 0 .05);
+}
+
+.coffee-cup{
+    margin-top: auto;
+    width : 70%;
+    transform: translate(30% );
+    border-radius:50%; 
+}
+
+.bottom-area h2{
+    position :relative;
+    max-width : 81rem;
+    width:  100%;
+    margin:0 auto;
+    margin-top: 10px;
+    padding: 0 3rem; 
+    z-index: 10;
+}
+
+.cards{
+    position :relative;
+    max-width : 81rem;
+    width:  100%;
+    margin:0 auto;
+    margin-top: 20px;
+    padding: 0 3rem; 
+    z-index: 10;
+}
+
+.threeBox{
+    display: flex;
+    align-items:center;
+    gap:3rem;
+}
+
+.box{
+    background-color: antiquewhite;
+    width:350px;
+    height:350px;
+    border-radius: 30px;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+
+.im{
+    width: 50%;
+    height: 50%;
+}
+
+.card-text h3{
+    margin-top:5%;
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.menuSelection{
+    position :relative;
+    max-width : 81rem;
+    width:  100%;
+    margin:0 auto;
+    margin-top: 10px;
+    padding: 0 3rem; 
+    z-index: 10;
+    background-color: antiquewhite;
+    padding-bottom: 40px;
+}
+
+
+.menuSelection h2{
+    padding-top: 15px;
+}
+
+.upper{
+    display:flex;
+    align-items: center;
+    gap:3rem;
+}
+
+.one{
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#fff;
+   
+}
+
+
+.one img{
+    border-radius: 50px;   
+    
+}
+
+.two img{
+    border-radius:50px;
+}
+
+.lower{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menuSelection h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.im1{
+    width: 100%;
+    height: 30%;
+
+}
+
+.about-us{
+    display:grid;
+    grid-template-columns :repeat(2, 1fr);
+    align-items: center;
+    justify-content:center;
+    margin-top:60px;
+
+}
+
+.text-area{
+    line-height: 30px;
+}
+
+.image{
+    width:100%;
+    align-items: center;
+    
+}
